@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server":"node backend/server.js",
-    "nodemon":"nodemon backend/server.js",
-    "client":"npm run start --prefix frontend",
-    "dev":"concurrently -k \"npm run client\" \"npm run nodemon\""
+    "server": "node backend/server.js",
+    "nodemon": "nodemon backend/server.js",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently -k \"npm run client\" \"npm run nodemon\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.7",
+    "concurrently": "^9.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
